@@ -13,16 +13,16 @@
 
         <nav><!--Seção de Navegação do site.-->
             <ul>
-                <li><a href="#descrição">Descrição</a></li>
+                <li><a href="#descricao">Descrição</a></li>
                 <li><a href="#destino">Para que serve</a> </li>
-                <li><a href="#Construção">Detalhes Importantes</a></li>
+                <li><a href="#construcao">Detalhes Importantes</a></li>
                 <li><a href="https://google.com.br" target="_blank">Google</a> </li>
                 
             </ul><!--Lista não ordenada para links do nosso menu.-->
         </nav>
     </header>
 
-    <section id="descrição">
+    <section id="descricao">
         <h2>Teclado Baixa Visão e Braille</h2>
 
         <img src="imagens/Teclado-Braille-New-4.jpg" width="400" alt="Imagem do Teclado" title="Imagem Teclado">
@@ -80,23 +80,29 @@
 
             <form action="">
 
-                <label for="nome">nome: </label>
-                <input type="text" id="nome" name="nome"><br>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required><br>
 
                 <label for="email">E-mail: </label>
-                <input type="email" id="email" name="email"><br>
+                <input type="email" id="email" name="email" required><br>
 
                 <label for="telefone">Telefone: </label>
                 <input type="tel" id="telefone" name="telefone"><br>
 
-                <label for="Assunto/Dúvida">Selecione opção</label>
+                <label for="Assunto/duvida">Selecione opção</label>
                 <select name="Assunto" id="Assunto"><br>
-                    <option value="Orçamento">Orçamento</option>
-                    <option value="Dúvida">Dúvida</option>
-                    <option value="Outros">Outros</option>
+                    <option value="Orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outros">Outros</option>
                 </select>
+                <br>
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea><br>
 
-                
+                <input type="checkbox" name="inscricao" id="inscricao">
+                <label for="inscricao">Deseja receber nossa newsletter? Fique por dentro.</label><br>
+
+                <input type="submit" value="Enviar mensagem">
 
             </form>
         </section>
